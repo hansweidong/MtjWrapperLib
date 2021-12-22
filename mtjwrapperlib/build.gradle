@@ -52,15 +52,15 @@ task sourceJar(type: Jar) {
     from android.sourceSets.main.java.sourceFiles
 }
 
-task javadoc(type: Javadoc) {
-    source = android.sourceSets.main.java.sourceFiles
-    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-}
+//task javadoc(type: Javadoc) {
+//    source = android.sourceSets.main.java.sourceFiles
+//    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+//}
 
-task javadocJar(type: Jar, dependsOn: javadoc) {
-    classifier = 'javadoc'
-    from javadoc.destinationDir
-}
+//task javadocJar(type: Jar, dependsOn: javadoc) {
+//    classifier = 'javadoc'
+//    from javadoc.destinationDir
+//}
 
 task classesJar(type: Jar) {
     from "$buildDir/intermediates/classes/release"
@@ -68,7 +68,7 @@ task classesJar(type: Jar) {
 
 artifacts {
     archives classesJar
-    archives javadocJar
+//    archives javadocJar
     archives sourceJar
 }
 
