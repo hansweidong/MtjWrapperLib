@@ -1,0 +1,2 @@
+include ':mtjwrapperlib'
+include ':app'
