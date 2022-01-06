@@ -9,5 +9,5 @@ package com.baidu.mobstat;
  * @Email wuweidong@yy.com
  * @Note
  */
-interface IIgnoreAutoEvent {
+public interface IIgnoreAutoEvent {
 }
