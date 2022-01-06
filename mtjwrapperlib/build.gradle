@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'com.github.dcendents.android-maven'
+    id 'maven-publish'
 }
 
 repositories {
@@ -12,7 +13,8 @@ repositories {
     }
 }
 
-group='com.github.mtjwrapperlib'
+group = 'com.github.mtjwrapperlib'
+version = '0.1.1'
 
 android {
     compileSdkVersion 30
@@ -83,7 +85,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.mtjwrapperlib'
                 artifactId = 'mtjwrapperlib'
-                version = '0.1.0'
+                version = '0.1.1'
             }
         }
     }
